@@ -192,7 +192,7 @@ cache:
   - $HOME/cmake
 
 before_install:
-- yes | sdkmanager "cmake;3.6.4111459"
+- if [ "$BRANCH" == "base-android" ]; then yes | sdkmanager "cmake;3.6.4111459"; fi
 
 install:
 # Android needs CMake 3.7, but https://gitlab.kitware.com/cmake/cmake/issues/17253
