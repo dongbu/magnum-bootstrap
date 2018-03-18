@@ -157,11 +157,8 @@ matrix:
     - TARGET_GLES2=ON
     android:
       components:
-      #- tools
       - build-tools-26.0.2
-      #- tools # cthulhu fhtagn
       - android-22
-      - sys-img-armeabi-v7a-android-22
   - language: android
     os: linux
     dist: trusty
@@ -171,11 +168,8 @@ matrix:
     - TARGET_GLES2=OFF
     android:
       components:
-      #- tools
       - build-tools-26.0.2
-      #- tools # cthulhu fhtagn
       - android-22
-      - sys-img-armeabi-v7a-android-22
 
 notifications:
   webhooks:
